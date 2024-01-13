@@ -1,4 +1,4 @@
-# Segunda entrega JavaScript
+# Tercera entrega JavaScript
 ## Estudiante: Carlos Alberto Gordillo Varela
 ## Profesor: Maximiliano Cardenas
 ## Tutor: Alessio Adrover
@@ -11,5 +11,9 @@
 - funciones de orden superior
 - DOM
 - eventos
+- storage & json
+- operadores avanzados
 
 ##### Para su funcionamiento solo se debe dar en la techa "Añadir al carrito" y al lado derecho saldrá un panel en el que se van a ir sumando o restando los productos agregados. Este panel contará con un signo "+" y un signo "-" para agregar o quitar productos y automáticamente generará la suma y/o resta. 
+
+##### Para esta entrega se terminó de pulir el carrito de compras y se agregaron las imágenes de los productos.

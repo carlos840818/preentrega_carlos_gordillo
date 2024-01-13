@@ -52,3 +52,10 @@ body {
     padding: 5px 10px;
     border-radius: 5px;
   }
+
+  .item img {
+    width: 100px; /* Ajusta el tamaño según tus necesidades */
+    height: auto; /* Mantiene la proporción original */
+    justify-content: center;
+    align-items: center;
+}

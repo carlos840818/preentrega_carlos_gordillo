@@ -64,7 +64,7 @@ const db = {
         }
       },
       count: () => {
-        return shoppingCart.items.reduce((acc, item) => acc + item.qyt, 0);
+        return shoppingCart.items.reduce((acc, item) => acc + item.qty, 0);
       },
       get: (id) => {
         const index = shoppingCart.items.findIndex((item) => item.id === id);
@@ -93,6 +93,7 @@ const db = {
     const html = db.items.map((item) => {
       return `
           <div class="item">
+              <img src="${item.Image}" alt="${item.title}">
               <div class="title">${item.title}</div>
               <div class="price">${numberToCurrency(item.price)}</div>
               <div class="qty">${item.qty} units</div>
@@ -155,7 +156,7 @@ const db = {
   
     document.querySelector("#shopping-cart-container").classList.remove("hide");
     document.querySelector("#shopping-cart-container").classList.add("show");
-  
+    
     document.querySelectorAll(".addOne").forEach((button) => {
       button.addEventListener("click", (e) => {
         const id = parseInt(button.getAttribute("data-id"));
